@@ -9,6 +9,7 @@
     <!-- icon link form bootstrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Custom CSS link  -->
+
     <link rel="stylesheet" href="style.css">
     <!---------------------------------------- BootStraps link ---------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -49,7 +50,8 @@
                         maiores
                         blanditiis, ullam saepe. Esse eaque ratione dolorem saepe, recusandae officiis molestiae
                         voluptate suscipit impedit accusantium fugiat optio nostrum.</p>
-                    <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enrollment">Start The
+                        Enrollment</button>
                 </div>
                 <img class="img-fluid w-50 " src="img/undraw_Coding_re_iv62.svg" alt="">
             </div>
@@ -163,7 +165,7 @@
             </div>
         </div>
     </section>
-    <section id="questions" class="p-5">
+    <section id="Questions" class="p-5">
         <div class="container">
             <h2 class="text-center mb-4">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -233,7 +235,7 @@
             </div>
         </div>
     </section>
-    <section id="instructors" class="p-5 bg-primary">
+    <section id="Instructions" class="p-5 bg-primary">
         <div class="container">
             <h2 class="text-center text-white">Our Instructors</h2>
             <p class="lead text-center text-white mb-5">Our instructros all have 5+ years wroking as a web developer in
@@ -244,7 +246,7 @@
                         <div class="card-body text-center">
                             <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3"
                                 alt="">
-                            <h3 class="card-title mb-3">John Doe</h3>
+                            <h3 class="card-title mb-3">Papon chy</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vero ad
                                 impedit aut dolore harum esse exercitationem explicabo beatae et.</p>
                             <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
@@ -289,7 +291,7 @@
                         <div class="card-body text-center">
                             <img src="https://randomuser.me/api/portraits/women/13.jpg" class="rounded-circle mb-3"
                                 alt="">
-                            <h3 class="card-title mb-3">Lara Jane</h3>
+                            <h3 class="card-title mb-3">Papiya begum</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vero ad
                                 impedit aut dolore harum esse exercitationem explicabo beatae et.</p>
                             <a href="#"> <i class="bi bi-twitter text-dark mx-1"></i></a>
@@ -308,7 +310,7 @@
             <div class="row g-4">
                 <div class="col-md">
                     <h2 class="text-center mb-4">Contact Info</h2>
-                    <ul class="list-group-item list-group-flush lead">
+                    <ul class="list-group list-group-flush lead">
                         <li class="list-group-item">
                             <span class="fw-bold">Main Location: </span> 50 Main St Sylhet Bangladesh
                         </li>
@@ -326,10 +328,71 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-md">
+                    <!-- <div id='map' style='width: 400px; height: 300px;'></div> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57900.49982086041!2d91.84092789123203!3d24.905442556360715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1627295777064!5m2!1sen!2sbd"
+                        width="650" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
             </div>
         </div>
     </section>
+    <!-- footer section  -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Koysor hasan, Sylhet</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
 
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="enrollment" tabindex="-1" aria-labelledby="enrollmentLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollmentLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get bact to you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name" name="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Last-Name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="Last Name" name="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Email:
+                            </label>
+                            <input type="email" class="form-control" name="" id="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="number" class="form-control" id="Phone" name="">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -339,6 +402,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
